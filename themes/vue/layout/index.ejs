@@ -19,7 +19,7 @@
         <p>
           <a id="modal-player" class="button has-icon" href="javascript:;">
             <%- partial('icons/play') %>
-            WHY VUE.JS?</a>
+            为什么要用 VUE.JS?</a>
           <a class="button white" href="<%- url_for("/v2/guide/") %>">起步</a>
           <a class="button gray has-icon" href="https://github.com/vuejs/vue" target="_blank" rel="noopener">
             <%- partial('icons/github-dark') %>
@@ -27,21 +27,6 @@
         </p>
       </div>
     </div>
-  </div>
-
-  <div id="special">
-    <h3>特别赞助</h3>
-    <%_ for (const sponsor of theme.platinum_sponsors_china) { _%>
-    <a href="<%- sponsor.url %>" target="_blank" rel="noopener sponsored">
-      <img src="<%- url_for(`/images/${sponsor.img}`) %>" style="width:200px">
-    </a>
-    <%_ } _%>
-    <%_if (theme.platinum_sponsors_china.length < 2) { _%>
-    <br>
-    <a class="become-backer" href="/support-vuejs/#special-sponsor-china">
-      成为特别赞助商
-    </a>
-    <%_} _%>
   </div>
 
   <div id="highlights">
@@ -64,12 +49,6 @@
           最省心的优化
         </p>
       </div>
-    </div>
-  </div>
-
-  <div id="sponsors">
-    <div class="inner">
-      <%- partial('partials/sponsors') %>
     </div>
   </div>
 
